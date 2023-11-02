@@ -9,6 +9,6 @@ We demonstrate the training and testing of the DRL object sorting policies in si
 # PQCN-MobileNetV3-S-FCN
 
 <!-- ![Method Overview](method.png?raw=true) -->
-<div align="center"><img src="img/MobileNetV3_L.png" width="60%"/></div>
+<div align="center"><img src="img/MobileNetV3_L.png" width="95%"/></div>
 
 
