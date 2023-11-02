@@ -4,7 +4,7 @@ Deep Reinforcement Learning with Light-Weight Vision Model for Sequential Roboti
 An illustration of the training of the newly proposed deep reinforcement learning agent (PQCN_MobileNetV3_S_FCN) used for sorting ten irregular and regular object blocks under varying degrees of complexity. 
 
 <!-- ![Method Overview](method.png?raw=true) -->
-<div align="center"><img src="img/PQCN_MobileNetV3_S_FCN_object_sorting.gif" width="95%"/></div>
+<div align="center"><img alt="Animated GIF" src="img/PQCN_MobileNetV3_S_FCN_object_sorting.gif" width="95%"/></div>
 
 # Method Overview
 This GitHub repository presents an implementation of Pytorch code of deep reinforcement learning (DRL) agents based on Pixel-wise Q-Learning based Critic Network (PQCN) developed from a modified variant of the Vanilla DQN. The central goal of this project is to perform a comparative analysis on several DRL agents in executing object sorting of several categories of irregular and regular object blocks under a cluttered, occluded, and highly dynamic environment scenario with varying degrees of complexities. In our project, we propose a new variant of a PQCN that factors any of the four kinds of network backbones (MobileNetV3, DenseNet121, DenseNet169, and SqueezeNet1.0) integrated with a custom fully convolutional neural network used for deciding three 
