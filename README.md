@@ -1,7 +1,7 @@
 # DRL_for_Object_Sorting
 Deep Reinforcement Learning with Light-Weight Vision Model for Sequential Robotic Object Sorting
 
-An illustration of the training of the newly proposed deep reinforcement learning agent(PQCN_MobileNetV3_S_FCN) used for sorting ten irregular and regular object blocks under varying degrees of complexity. 
+An illustration of the training of the newly proposed deep reinforcement learning agent (PQCN_MobileNetV3_S_FCN) used for sorting ten irregular and regular object blocks under varying degrees of complexity. 
 
 <!-- ![Method Overview](method.png?raw=true) -->
 <div align="center"><img src="img/PQCN_MobileNetV3_S_FCN_object_sorting.gif" width="95%"/></div>
