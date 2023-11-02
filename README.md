@@ -5,7 +5,7 @@ Deep Reinforcement Learning with Light-Weight Vision Model for Sequential Roboti
 An illustration of the training process of our newly proposed deep reinforcement learning agent (PQCN_MobileNetV3_S_FCN) used for sorting object blocks under varying degrees of complexity. 
 
 <!-- ![Method Overview](method.png?raw=true) -->
-<div align="center"><img alt="Animated GIF" src="img/PQCN_MobileNetV3_S_FCN_object_sorting.gif" width="95%"/></div> 
+<div align="center"><img alt="Animated GIF" src="img/robot_sort.gif" width="95%"/></div> 
 
 
 # Method Overview
