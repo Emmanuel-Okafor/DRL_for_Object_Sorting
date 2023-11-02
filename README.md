@@ -12,6 +12,9 @@ We demonstrate the training and testing of the DRL object sorting policies in si
 
 # PQCN-DenseNet121-S-FCN
 <!-- ![Method Overview](method.png?raw=true) -->
-<div align="center"><img src="img/.png" width="95%"/></div>
+<div align="center"><img src="img/densen.png" width="95%"/></div>
 
+# PQCN-SqueezeNet-S-FCN
+<!-- ![Method Overview](method.png?raw=true) -->
+<div align="center"><img src="img/sqn.png" width="95%"/></div>
 
