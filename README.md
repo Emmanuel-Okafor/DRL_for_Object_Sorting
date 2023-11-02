@@ -9,6 +9,8 @@ An illustration of the training process of our newly proposed deep reinforcement
 <!-- <video class="player__video viewer" src="img/PQCN_MobileNetV3_S_FCN_object_sorting.mp4" width="95%"></video> --> 
 <video src="https://github.com/Emmanuel-Okafor/DRL_for_Object_Sorting/tree/main/img/PQCN_MobileNetV3_S_FCN_object_sorting.mp4" controls="controls" style="max-width: 730px;"></video>
 
+<img align="right" src="./DRL_for_Object_Sorting/tree/main/img/PQCN_MobileNetV3_S_FCN_object_sorting.mp4" height="500px"/>
+
 # Method Overview
 This GitHub repository presents an implementation of Pytorch code of deep reinforcement learning (DRL) agents based on Pixel-wise Q-Learning based Critic Network (PQCN) developed from a modified variant of the Vanilla DQN. The central goal of this project is to perform a comparative analysis on several DRL agents in executing object sorting of several categories of irregular and regular object blocks under a cluttered, occluded, and highly dynamic environment scenario with varying degrees of complexities. In our project, we propose a new variant of a PQCN that factors any of the four kinds of network backbones (MobileNetV3, DenseNet121, DenseNet169, and SqueezeNet1.0) integrated with a custom fully convolutional neural network used for deciding three 
 possible optimal actions (pushing, grasping, and placing).
