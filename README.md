@@ -25,3 +25,78 @@ We demonstrate the training and testing of the DRL object sorting policies in si
 <!-- ![Method Overview](method.png?raw=true) -->
 <div align="center"><img src="img/sqn.png" width="95%"/></div>
 
+#### Contact
+Please let me know if there are any questions or bugs: [Emmanuel Okafor] emmanuel.okafor@kfupm.edu.sa
+
+
+#### Instructions
+
+## Installation
+We utilized the PyTorch ('2.1.0+cu121')  deep learning framework for implementing and training all our  deep reinforcement learning models on a PC with two NVIDIA GeForce RTX 3090 each having 24GB GPUs  (with CUDA 12.1) and AMD Ryzen Threadripper PRO 3975WX 32-Cores CPU memory capacity running on Ubuntu 22.04.
+
+1. Install [Anaconda](https://www.anaconda.com/) and create virtual environment
+```shell
+conda create -n object_sorting python=3.9.16 -y
+```
+2. Install [PyTorch](https://pytorch.org/)
+```shell
+conda activate object_sorting
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+```
+3. Install python libraries
+```shell
+pip3 install numpy scipy opencv-python matplotlib
+```
+4. Install [CoppeliaSim](http://www.coppeliarobotics.com/)) simulation environment
+
+## How to run
+#### Prepare simulation environment
+Run CoppeliaSim(navigate to your CoppeliaSim directory and run `./coppeliaSim.sh`). From the main menu, select `File` > `Open scene...`, and open the file `DRLSorting/simulation/simulation.ttt` from this repository.
+
+#### Training
+```shell
+export CUDA_VISIBLE_DEVICES="0" && python3 main.py --is_sim --obj_mesh_dir objects/blocks --num_obj 10 --push_rewards --experience_replay --random_actions --use_commonsense --explore_rate_decay --future_reward_discount 0.70 --max_iter 50000 --save_visualization
+```
+
+#### How to continue training
+```shell
+export CUDA_VISIBLE_DEVICES="0" && python3 main.py --is_sim --obj_mesh_dir objects/blocks --num_obj 10 --push_rewards --experience_replay --random_actions --use_commonsense --explore_rate_decay --future_reward_discount 0.70 --max_iter 50000 --save_visualization --load_snapshot --snapshot_file './logs/[USER_FOLDER]/models/snapshot-backup.reinforcement.pth' --continue_logging --logging_directory './logs/USER_FOLDER'
+```
+
+#### How to plot the shorter duration experiments for performing 4 object sorting considering three forms of optimization schemes after training for 10000 action steps
+
+```shell
+python metric_plot_train_optimization_4obj.py --log_dir './Training_Performance_Results_Logs/Results_4ObjectSorting/plot'
+```
+#### How to plot the longer duration experiments for executing 4 object sorting considering only SGDM after training for 22000 action steps.
+
+```shell
+python metric_plot_train_SGDM_4obj.py --log_dir './Training_Performance_Results_Logs/Results_4ObjectSorting/plot'
+```
+#### How to plot the experiments of the variants of PQCN during execution of 6 object sorting considering only SGDM after training for 22000 action steps for dual transfer learning and  40000 action steps for single transfer learning.
+
+```shell
+python metric_plot_train_6_object_sorting.py --log_dir './Training_Performance_Results_Logs/Results_6_ObjectSorting/plot'
+```
+#### How to plot the experiments of the variants of PQCN during execution of 10 object sorting considering only SGDM after training for 22000 action steps for dual transfer learning and  50000 action steps for single transfer learning.
+
+```shell
+python metric_plot_train_10_object_sorting.py --log_dir './Training_Performance_Results_Logs/Results_10_ObjectSorting/plot/'
+```
+
+
+#### How to evaluate the training  performance
+```shell
+python metric_eval_train_performance_evaluation.py --log_dir './Training_Performance_Results_Logs/Results_4ObjectSorting/plot/PQCN-DenseNet121-FT-FCN-G-070-SGDM' --object_num  4
+```
+
+
+
+#### How to evaluate the testing performance
+```shell
+python3 metric_eval_test.py --log_dir './Testing_Performance_Results_Logs/Testing_fixed_scene_for_4_object_sorting_transition_log/PQCN-DenseNet121-FT-FCN-4objs/transitions1' --object_num 4
+```
+
+
+
+
