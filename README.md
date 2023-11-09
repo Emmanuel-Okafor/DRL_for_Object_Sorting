@@ -99,6 +99,6 @@ python3 metric_eval_test.py --log_dir './Testing_Performance_Results_Logs/Testin
 
 
 ## Acknowledgement
-Our code is based on [VPG](https://github.com/andyzeng/visual-pushing-grasping), [Good Robot!](https://github.com/jhu-lcsr/good_robot), and [DRLSorting](https://github.com/JiatongBao/DRLSorting).
+Our code is based on [VPG](https://github.com/andyzeng/visual-pushing-grasping), and [Good Robot!](https://github.com/jhu-lcsr/good_robot) <!--and [DRLSorting](https://github.com/JiatongBao/DRLSorting).-->
 
 
