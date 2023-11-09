@@ -63,12 +63,12 @@ export CUDA_VISIBLE_DEVICES="0" && python3 main.py --is_sim --obj_mesh_dir objec
 export CUDA_VISIBLE_DEVICES="0" && python3 main.py --is_sim --obj_mesh_dir objects/blocks --num_obj 10 --push_rewards --experience_replay --random_actions --use_commonsense --explore_rate_decay --future_reward_discount 0.70 --max_iter 50000 --save_visualization --load_snapshot --snapshot_file './logs/[USER_FOLDER]/models/snapshot-backup.reinforcement.pth' --continue_logging --logging_directory './logs/USER_FOLDER'
 ```
 
-#### How to plot the shorter duration experiments for performing 4 object sorting considering three forms of optimization schemes after training for 10000 action steps
+#### How to plot the experiments of the variants of PQCN during execution of   4 object sorting considering three forms of optimization schemes after training for 10000 action steps
 
 ```shell
 python metric_plot_train_optimization_4obj.py --log_dir './Training_Performance_Results_Logs/Results_4ObjectSorting/plot'
 ```
-#### How to plot the longer duration experiments for executing 4 object sorting considering only SGDM after training for 22000 action steps.
+#### How to plot the experiments of the variants of PQCN during execution of  4 object sorting considering only SGDM after training for 22000 action steps.
 
 ```shell
 python metric_plot_train_SGDM_4obj.py --log_dir './Training_Performance_Results_Logs/Results_4ObjectSorting/plot'
