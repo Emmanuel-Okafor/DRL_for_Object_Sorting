@@ -37,7 +37,7 @@ class reinforcement_net(nn.Module):
         super(reinforcement_net, self).__init__()
         self.use_cuda = use_cuda
 
-        # Initialize network trunks with DenseNet pre-trained on ImageNet
+        # Initialize network trunks with MobileNetV3 pre-trained on ImageNet
         self.push_color_trunk = torchvision.models.mobilenet_v3_large(pretrained=True)
         self.push_depth_trunk =  torchvision.models.mobilenet_v3_large(pretrained=True)
         self.grasp_color_trunk = torchvision.models.mobilenet_v3_large(pretrained=True)
