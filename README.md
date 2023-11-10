@@ -63,6 +63,15 @@ export CUDA_VISIBLE_DEVICES="0" && python3 main.py --is_sim --obj_mesh_dir objec
 export CUDA_VISIBLE_DEVICES="0" && python3 main.py --is_sim --obj_mesh_dir objects/blocks --num_obj 10 --push_rewards --experience_replay --random_actions --use_commonsense --explore_rate_decay --future_reward_discount 0.70 --max_iter 50000 --save_visualization --load_snapshot --snapshot_file './logs/[USER_FOLDER]/models/snapshot-backup.reinforcement.pth' --continue_logging --logging_directory './logs/USER_FOLDER'
 ```
 
+#### Download the log transition zip files for our experiments and insert in your working directory
+Training Phase (Training_Performance_Results_Logs.zip) 
+[Download](https://drive.google.com/file/d/1UAv_Jn_JdlR6vF-FLcsnbeFm5QaiouRb/view?usp=sharing)<br>
+
+
+Testing Phase (Testing_Performance_Results_Logs.zip) [Download](
+https://drive.google.com/file/d/13oS4ZKw-SCG6wm7AyDo6eTpMJcxa8-gr/view)<br>
+
+
 #### How to plot the experiments of the variants of PQCN during execution of   4 object sorting considering three forms of optimization schemes after training for 10000 action steps
 
 ```shell
