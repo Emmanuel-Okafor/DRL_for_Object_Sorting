@@ -47,7 +47,13 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
 ```shell
 pip3 install numpy scipy opencv-python matplotlib
 ```
-4. Install [CoppeliaSim](http://www.coppeliarobotics.com/)) simulation environment
+
+4. Python library to control an UR robot
+```shell
+pip3 install urx
+```
+
+5. Install [CoppeliaSim](http://www.coppeliarobotics.com/)) simulation environment
 
 ## How to run
 #### Prepare simulation environment
