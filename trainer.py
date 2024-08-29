@@ -228,7 +228,7 @@ class Trainer(object):
             if primitive_action == 'push':
                 if action_attribute:
                     if change_detected:
-                        current_reward = 0.1
+                        current_reward = 0.2
             elif primitive_action == 'grasp':
                 if grasp_success and grasp_correct:
                     current_reward = 1.0
