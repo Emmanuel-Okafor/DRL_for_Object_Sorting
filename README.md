@@ -7,6 +7,22 @@ An illustration of the training process of our newly proposed deep reinforcement
 <!-- ![Method Overview](method.png?raw=true) -->
 <div align="center"><img alt="Animated GIF" src="img/deep_reinforcement_learning_for_object_sorting.gif" width="95%"/></div> 
 
+#### Citing
+
+If you find this code useful in your work, kindly cite this article:
+```
+@article{okafor2024deep,
+  title={Deep reinforcement learning with light-weight vision model for sequential robotic object sorting},
+  author={Okafor, Emmanuel and Oyedeji, Mojeed and Alfarraj, Motaz},
+  journal={Journal of King Saud University-Computer and Information Sciences},
+  volume={36},
+  number={1},
+  pages={101896},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+
 
 # Method Overview
 This GitHub repository presents an implementation of Pytorch code of deep reinforcement learning (DRL) agents based on Pixelwise Q-valued based Critic Network (PQCN) developed from a modified variant of the Vanilla DQN. The central goal of this project is to perform a comparative analysis on several DRL agents in executing object sorting of several categories of irregular and regular object blocks under a cluttered, occluded, and highly dynamic environment scenario with varying degrees of complexities. In our project, we propose a new variant of a PQCN that factors any of the four kinds of network backbones (MobileNetV3, DenseNet121, DenseNet169, and SqueezeNet1.0) integrated with a custom fully convolutional neural network used for deciding three 
