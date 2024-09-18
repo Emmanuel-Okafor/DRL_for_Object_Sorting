@@ -73,7 +73,7 @@ pip3 install urx
 
 ## How to run
 #### Prepare simulation environment
-Run CoppeliaSim(navigate to your CoppeliaSim directory and run `./coppeliaSim.sh`). From the main menu, select `File` > `Open scene...`, and open the file `DRLSorting/simulation/simulation.ttt` from this repository.
+Run CoppeliaSim(navigate to your CoppeliaSim directory and run `./coppeliaSim.sh`). From the main menu, select `File` > `Open scene...`, and open the file `DRL_for_Object_Sorting/simulation/simulation.ttt` from this repository.
 
 #### Training
 ```shell
