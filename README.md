@@ -118,7 +118,7 @@ python metric_plot_train_10_object_sorting.py --log_dir './Training_Performance_
 
 #### How to evaluate the training  performance
 ```shell
-python metric_eval_train_performance_evaluation.py --log_dir './Training_Performance_Results_Logs/Results_4ObjectSorting/plot/PQCN-DenseNet121-FT-FCN-G-070-SGDM' --object_num  4
+python metric_eval_train_performance_evaluation.py --log_dir './logs/[TRAIN-FOLDER]/transitions' --object_num  4
 ```
 
 
